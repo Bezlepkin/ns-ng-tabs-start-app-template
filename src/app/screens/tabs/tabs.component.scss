@@ -1,0 +1,19 @@
+
+@import 'src/scss/variables';
+
+MDTabStrip {
+  selected-item-color: $brand;
+  un-selected-item-color: #fff;
+  /*
+  un-selected-item-color: blue;
+  highlight-color: yellow;
+  background-color: green;
+  */
+}
+
+MDTabStripItem {
+  background-color: #191626;
+  Image {
+    font-size: 24;
+  }
+}
