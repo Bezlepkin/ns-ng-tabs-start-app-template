@@ -20,6 +20,11 @@ $color-dark-system-gray5: rgb(44, 44, 46);
 $color-dark-system-gray6: rgb(28, 28, 30);
 
 ActionBar, .action-bar {
+  background-color: $brand;
+}
+
+.bottom-navigation {
+	height: 56;
 }
 
 .list-view {

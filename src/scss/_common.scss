@@ -7,9 +7,22 @@
   font-family: 'Ionicons', ionicons;
 }
 
+ActionBar, .action-bar {
+  background-color: $brand;
+}
+
 /* blocks */
 .block {
 	padding: 16;
+}
+
+.bottom-navigation {
+  background-color: #191626;
+  .active {
+    Label {
+      color: $brand;
+    }
+  }
 }
 
 /* buttons */
