@@ -17,3 +17,11 @@ MDTabStripItem {
     font-size: 24;
   }
 }
+
+:host-context(.ns-android) .bottom-navigation {
+  height: 56;
+}
+
+:host-context(.ns-ios) .bottom-navigation {
+  height: 49;
+}
