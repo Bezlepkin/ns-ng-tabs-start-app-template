@@ -4,11 +4,10 @@ import { Page } from '@nativescript/core';
 @Component({
   selector: 'ns-catalog',
   templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.scss']
+  styleUrls: ['./catalog.component.scss'],
 })
 export class CatalogComponent implements OnInit {
-
-  constructor(private page: Page) { }
+  constructor(private page: Page) {}
 
   ngOnInit(): void {
     this.page.actionBarHidden = true;

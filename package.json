@@ -29,6 +29,18 @@
     "@nativescript/types": "~8.1.1",
     "@nativescript/webpack": "~5.0.0",
     "@ngtools/webpack": "~13.1.1",
-    "typescript": "~4.4.4"
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.6.2",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "iphone": "ns debug ios --device '8B1BEFEA-F4E9-490F-95C0-41051AAC8A42'",
+    "iphone-igor-se": "ns debug ios --device '1ba53819f4cee8d78f2fc22dd6ae9a20aeb66d75'",
+    "android-igor-zte": "ns debug android --no-hmr --device '325105850698'"
   }
 }

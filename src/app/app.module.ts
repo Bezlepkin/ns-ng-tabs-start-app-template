@@ -1,15 +1,15 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptModule } from '@nativescript/angular';
 import { AppRoutingModule } from './app-routing.module';
-import { NativeScriptMaterialBottomNavigationModule } from "@nativescript-community/ui-material-bottom-navigation/angular";
-import { NativeScriptMaterialTabsModule } from "@nativescript-community/ui-material-tabs/angular";
+import { NativeScriptMaterialBottomNavigationModule } from '@nativescript-community/ui-material-bottom-navigation/angular';
+import { NativeScriptMaterialTabsModule } from '@nativescript-community/ui-material-tabs/angular';
 import { AppComponent } from './app.component';
 import {
   TabsComponent,
   HomeComponent,
   CatalogComponent,
   FavoritesComponent,
-  SettingsComponent
+  SettingsComponent,
 } from './screens/tabs';
 
 @NgModule({
@@ -18,7 +18,7 @@ import {
     NativeScriptModule,
     AppRoutingModule,
     NativeScriptMaterialBottomNavigationModule,
-    NativeScriptMaterialTabsModule
+    NativeScriptMaterialTabsModule,
   ],
   declarations: [
     AppComponent,
@@ -26,9 +26,9 @@ import {
     HomeComponent,
     CatalogComponent,
     FavoritesComponent,
-    SettingsComponent
+    SettingsComponent,
   ],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
