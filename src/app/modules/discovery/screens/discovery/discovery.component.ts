@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterExtensions } from '@nativescript/angular';
 import { Color, EventData, Frame, isIOS, Page } from '@nativescript/core';
 
 @Component({
@@ -9,12 +10,17 @@ import { Color, EventData, Frame, isIOS, Page } from '@nativescript/core';
 export class DiscoveryComponent implements OnInit {
 
   constructor(
-    private page: Page
+    private page: Page,
+    private router: RouterExtensions
   ) { }
 
   ngOnInit(): void {
     // this.page.statusBarStyle;
     this.page.androidStatusBarBackground = new Color('#090919');
+  }
+
+  onTap(): void {
+    this.router.navigate(['welcome']);
   }
 
   onActionBarLoaded(args: EventData): void {
