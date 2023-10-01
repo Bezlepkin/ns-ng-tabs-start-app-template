@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptCommonModule } from '@nativescript/angular';
-import { LibraryRoutingModule } from './library-routing.module';
+import { ChatRoutingModule } from './chat-routing.module';
 import { LibraryComponent } from './screens';
 
 
@@ -9,8 +9,8 @@ import { LibraryComponent } from './screens';
   declarations: [LibraryComponent],
   imports: [
     NativeScriptCommonModule,
-    LibraryRoutingModule
+    ChatRoutingModule
   ],
   schemas: [NO_ERRORS_SCHEMA]
 })
-export class LibraryModule { }
+export class ChatModule { }

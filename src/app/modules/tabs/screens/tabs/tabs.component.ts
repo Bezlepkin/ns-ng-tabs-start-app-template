@@ -20,7 +20,7 @@ export class TabsComponent implements OnInit {
 
   ngOnInit(): void {
     this.page.actionBarHidden = true;
-    this.routerExtension.navigate([{ outlets: { discoveryTab: ['discovery'], libraryTab: ['library'] } }], { relativeTo: this.activeRoute });
+    this.routerExtension.navigate([{ outlets: { discoveryTab: ['discovery'], chatTab: ['chat'], settingsTab: ['settings'] } }], { relativeTo: this.activeRoute });
   }
 
   onTabTap(index: number): void {

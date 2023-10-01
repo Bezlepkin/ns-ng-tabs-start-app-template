@@ -20,16 +20,10 @@ import {
             loadChildren: () => import('~/app/modules/discovery/discovery.module').then(m => m.DiscoveryModule),
           },
           {
-            path: 'library',
-            outlet: 'libraryTab',
+            path: 'chat',
+            outlet: 'chatTab',
             component: NSEmptyOutletComponent,
-            loadChildren: () => import('~/app/modules/library/library.module').then(m => m.LibraryModule),
-          },
-          {
-            path: 'favorites',
-            outlet: 'favoritesTab',
-            component: NSEmptyOutletComponent,
-            loadChildren: () => import('~/app/modules/favorites/favorites.module').then(m => m.FavoritesModule),
+            loadChildren: () => import('~/app/modules/chat/chat.module').then(m => m.ChatModule),
           },
           {
             path: 'settings',
